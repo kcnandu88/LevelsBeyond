@@ -1,0 +1,46 @@
+Levels Beyond Assessment:
+
+Used Technologies:
+
+Java, Jersey Rest, Hibernate, MYSQL, Apache Tomcat.
+
+Steps to Run the program:
+
+Step 1:
+Run the sql dump file before executing the program. It will create the tables and the schema in the MySQL DB.
+Schema Name-levelsbeyond.
+Table Name-notes
+
+Step 2: Storing a note into DB
+
+Deploy the web application in the apache tomcat server.
+
+Step 3: Storing
+For Persisting Data into Database: Method: POST Accept format: JSON
+
+http://localhost:8080/api/notes
+
+example input in JSON Format: {"body" : "Pick up milk!"}
+
+recieves: {
+    "id": 6,
+    "body": "values"
+}
+
+Step 4: Reading all
+
+For Reading all notes: Method: GET
+
+http://localhost:8080/api/notes/getallnotes
+
+Step 5: Reading by id
+
+For Reading specific notes by id, Method: GET
+
+http://localhost:8080/api/notes/1
+
+Step 6: Reading wildcard
+
+For getting wildcards query Method: GET
+
+http://localhost/api/notes?query=forget
